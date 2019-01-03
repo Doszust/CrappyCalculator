@@ -1,9 +1,11 @@
 class Calculator
 
+  #global variables
   $a = 1
   $math = '+'
   $b = 1
 
+  #get user input for calculation
   def input
     puts "enter a number"
     $a = gets.chomp.to_i
@@ -15,6 +17,7 @@ class Calculator
     calculate
   end
 
+  #calculate
   def calculate
 
     output = ''
@@ -36,6 +39,7 @@ class Calculator
     print(output)
   end
 
+  #displays the calculation on the terminal
   def print(output)
     puts "#{$a} #{$math} #{$b} = #{output}"
   end
